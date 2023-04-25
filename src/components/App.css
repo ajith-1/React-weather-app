@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins:wght@600&family=Ubuntu:wght@700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
-.container{ 
-    background-color: black;
-    background-image: url("../images/nature _cloudy.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size: cover;
+
+.container {
+  background-color: black;
+  background-image: url("../images/nature _cloudy.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
 
 }
 
@@ -20,13 +21,13 @@
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height:100vh ;
+  min-height: 100vh;
 }
 
 /* ----Navbar icon ---------*/
 .nav {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   position: fixed;
   width: 100vw;
   top: 2%;
@@ -45,6 +46,7 @@
   width: 40px;
   height: 40px;
 }
+
 .nav p img {
   margin-top: 5px;
   margin-right: 50px;
@@ -80,6 +82,7 @@
   padding: 10px;
   border-radius: 15px;
 }
+
 .search input {
   text-transform: capitalize;
   border: 0;
@@ -93,7 +96,8 @@
   font-size: 20px;
   font-weight: 700;
 }
-.box input::placeholder{
+
+.box input::placeholder {
   text-transform: none;
   color: #353535;
 }
@@ -111,9 +115,9 @@
   cursor: pointer;
 }
 
-/* -------Show ------ */
+/* -------Weather Display Section ------ */
 
-.helpText{
+.helpText {
   color: #dededf;
   font-weight: 900;
   margin-top: 30px;
@@ -177,7 +181,7 @@
 
 #cityName {
   text-align: center;
-  margin-bottom:25px; 
+  margin-bottom: 25px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -187,102 +191,109 @@
   font-size: 20px;
   font-weight: 600;
 }
-.value img{
+
+.value img {
   width: 25px;
   height: 25px;
 }
-#max{
+
+#max {
   margin-left: 20px;
 }
-/* --------- */
+
+/* ----Media query----- */
 
 @media screen and (max-width:500px) {
   .weather {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .nav h1 {
-      margin-left: 25px;
-      font-size: 25px;
+    margin-left: 25px;
+    font-size: 25px;
   }
 
   .nav img {
-      width: 35px;
-      height: 35px;
+    width: 35px;
+    height: 35px;
   }
 
   .search>h2 {
-      width: 18rem;
-      font-size: 18px ;
-      padding: 15px;
-      border-radius: 10px;
+    width: 18rem;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
   }
 
   .search .box {
-      border-radius: 10px;
-      width: 18.6rem;
-      margin-top: 10px;
-      padding: 5px 10px 10px 10px;
+    border-radius: 10px;
+    width: 18.6rem;
+    margin-top: 10px;
+    padding: 5px 10px 10px 10px;
   }
-  .box h2{
-      font-size: 19px;
+
+  .box h2 {
+    font-size: 19px;
   }
+
   .search input {
-      width: 190px;
-      height: 20px;
-      font-size: 20px;
-      padding-bottom: 5px;
+    width: 190px;
+    height: 20px;
+    font-size: 20px;
+    padding-bottom: 5px;
   }
 
   .search button {
-      width: 70px;
-      height: 35px;
-      font-size: 17px;
-      margin-top: 15px;
-      border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    font-size: 17px;
+    margin-top: 15px;
+    border-radius: 5px;
   }
-  #err{
-      font-size: 15px;
+
+  #err {
+    font-size: 15px;
   }
 
   .show {
-      width: 16rem;
-      padding: 30px;
-      border-radius: 10px;
-      margin-top: 20px;
+    width: 16rem;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
   }
 
   .temp p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .temp {
-      font-size: 80px;
+    font-size: 80px;
   }
 
   .temp #deg {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   #description {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   #cityName {
-      font-size: 17px;
+    font-size: 17px;
   }
 
   .value {
-      margin-left:-10px;
-      font-size: 17px;
+    margin-left: -10px;
+    font-size: 17px;
   }
 
   .sunrise {
-      position: absolute;
-      top: 50%;
-      margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
   }
-  .helpText{
+
+  .helpText {
     color: #dededf;
     font-size: medium;
     font-weight: 500;

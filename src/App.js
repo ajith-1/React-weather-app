@@ -3,9 +3,9 @@ import '../src/components/App.css';
 
 function App() {
   return (
-<>
-<Weather/>
-</>
+    <>
+      <Weather />
+    </>
   );
 }
 export default App;

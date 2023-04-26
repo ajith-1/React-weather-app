@@ -10,7 +10,7 @@ import github from '../images/github-logo.png';
 import { useState } from 'react';
 
 const Weather = () => {
-    const [text, setText] = useState('salem');
+    const [text, setText] = useState('');
     const [item, setItem] = useState([]);
     const [sunrise, setSunrise] = useState('');
     const [sunset, setSunset] = useState('');
